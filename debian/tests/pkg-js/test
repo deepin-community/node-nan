@@ -1,0 +1,2 @@
+V=1 node-gyp rebuild --directory test
+tap -R spec --gc test/js/*-test.js

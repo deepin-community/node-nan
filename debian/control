@@ -1,0 +1,36 @@
+Source: node-nan
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Jérémy Lal <kapouer@melix.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-bindings <!nocheck>
+ , node-gyp <!nocheck>
+ , node-tap <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-nan
+Vcs-Git: https://salsa.debian.org/js-team/node-nan.git
+Homepage: https://github.com/nodejs/nan
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-nan
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: nodejs:any
+Multi-Arch: foreign
+Description: Native Abstractions for Node.js
+ A header file filled with macro and utility goodness for making addon
+ development for Node.js easier across versions.
+ .
+ Keeping native addons compiling happily across versions, particularly
+ is a minor nightmare, due to API/ABI incompatibilities.
+ The goal of this project is to store
+ all logic necessary to develop native Node.js addons without having to
+ inspec NODE_MODULE_VERSION and get yourself into a macro-tangle.
+ .
+ This project also contains some helper utilities that make addon
+ development a bit more pleasant.
+ .
+ Node.js is an event-based server-side JavaScript engine.

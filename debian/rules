@@ -1,0 +1,38 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --with nodejs 
+
+debian/testdir/examples:
+	test -d debian/testdir || mkdir -p debian/testdir
+	cp -rf examples debian/testdir
+
+testexamples: debian/testdir/examples node_modules/nan
+	V=1 node-gyp rebuild --directory debian/testdir/examples/async_pi_estimate/
+	node debian/testdir/examples/async_pi_estimate/addon.js
+
+node_modules/nan:
+	test -d node_modules || mkdir node_modules
+	ln -s .. node_modules/nan
+
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+override_dh_auto_test: testexamples
+	V=1 node-gyp rebuild --directory test
+	tap -R spec --gc test/js/*-test.js
+else:
+override_dh_auto_test:
+endif
+
+override_dh_auto_clean:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+	node-gyp clean
+endif
+	dh_auto_clean
+	rm -rf debian/testdir
+	rm -rf node_modules
+
+.PHONY=testexamples

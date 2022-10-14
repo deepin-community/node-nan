@@ -1,0 +1,225 @@
+node-nan (2.15.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Fix the example file.
+  * Test the example during build.
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 19 Sep 2021 15:16:41 +0000
+
+node-nan (2.14.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Remove useless transitional link in usr/lib/nodejs (full rebuild tested)
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 15 Jan 2021 09:44:24 +0100
+
+node-nan (2.14.2-1) unstable; urgency=medium
+
+  * Team upload
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete field Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * New upstream version 2.14.2
+  * Install in /usr/share/nodejs with a transitional link in /usr/lib/nodejs
+  * Drop dependency to nodejs
+  * Apply multi-arch hints (foreign)
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 15 Jan 2021 09:31:24 +0100
+
+node-nan (2.14.0-1) unstable; urgency=medium
+
+  [ Xavier Guimard ]
+  * Add upstream/metadata
+
+  [ Jérémy Lal ]
+  * New upstream version 2.14.0
+  * Update changelog
+  * Standards-Version 4.3.0
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 10 Jul 2019 17:06:03 +0200
+
+node-nan (2.13.2-1) unstable; urgency=medium
+
+  * New upstream version 2.13.2
+
+ -- Jérémy Lal <kapouer@melix.org>  Thu, 25 Apr 2019 10:08:07 +0200
+
+node-nan (2.12.1-1) unstable; urgency=medium
+
+  * New upstream version 2.12.1
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 02 Jan 2019 15:59:33 +0100
+
+node-nan (2.11.1-1) unstable; urgency=medium
+
+  * New upstream version 2.11.1
+  * Standards-Version 4.2.1
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 30 Sep 2018 11:27:01 +0200
+
+node-nan (2.10.0-1) unstable; urgency=medium
+
+  [ Xavier Guimard ]
+  * New upstream version 2.10.0
+  * cme fix dpkg:
+    - Update debian/copyright format
+    - Remove version dependency for node-bindings
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 12 May 2018 14:15:44 +0200
+
+node-nan (2.8.0-1) unstable; urgency=medium
+
+  * New upstream version 2.8.0
+  * Drop Andrew Kelley from Uploaders, no longer active
+  * Standards-Version 4.1.1
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 22 Nov 2017 22:40:28 +0100
+
+node-nan (2.7.0-3) unstable; urgency=medium
+
+  * Team upload
+  * send some autopkgtest stderr to stdout. Fixing it.
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 08 Sep 2017 12:31:20 +0200
+
+node-nan (2.7.0-2) unstable; urgency=medium
+
+  * Fix autopkgtest depends
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 07 Sep 2017 10:54:20 +0200
+
+node-nan (2.7.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.7.0
+  * Extend copyright year
+  * Run autopkgtestsuite
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 06 Sep 2017 14:33:33 +0200
+
+node-nan (2.4.0-2) unstable; urgency=medium
+
+  * Fix failing test (Closes: #844905)
+
+ -- Jérémy Lal <kapouer@melix.org>  Mon, 28 Nov 2016 00:25:55 +0100
+
+node-nan (2.4.0-1) unstable; urgency=medium
+
+  * New upstream version 2.4.0
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 10 Sep 2016 10:54:06 +0200
+
+node-nan (2.3.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.3.5
+
+ -- Jérémy Lal <kapouer@melix.org>  Fri, 01 Jul 2016 17:54:40 +0200
+
+node-nan (2.3.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.3.0
+  * Standards-Version 3.9.8
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 27 Apr 2016 20:54:29 +0200
+
+node-nan (2.2.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.2.1
+  * Standards-Version 3.9.7
+  * Vcs "secure" url
+
+ -- Jérémy Lal <kapouer@melix.org>  Thu, 31 Mar 2016 14:19:45 +0200
+
+node-nan (2.2.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.2.0
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 10 Jan 2016 23:34:22 +0100
+
+node-nan (2.1.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.1.0
+
+ -- Jérémy Lal <kapouer@melix.org>  Tue, 27 Oct 2015 10:55:58 +0100
+
+node-nan (2.0.9-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.0.9
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 09 Sep 2015 16:52:51 +0200
+
+node-nan (2.0.8-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Ximin Luo <infinity0@debian.org>  Mon, 31 Aug 2015 04:36:30 +0200
+
+node-nan (1.8.4-3) unstable; urgency=medium
+
+  * Install all headers (Closes: #785791).
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 20 May 2015 10:55:51 +0200
+
+node-nan (1.8.4-2) unstable; urgency=medium
+
+  [ Andrew Kelley ]
+  * Imported Upstream version 1.8.4
+  * add myself to uploaders
+  * bump standards version to 3.9.6
+  * disable tests
+  * add upstream tests
+  * embed xtend module
+
+  [ Jérémy Lal ]
+  * Tests depend on bindings module
+  * Cleanup after tests
+  * Add upstream patch fixing a regexp test
+  * License is now Expat
+  * Add copyright section for nan_string_bytes.h
+  * Rename node to nodejs in test binding.gyp
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 20 May 2015 01:31:38 +0200
+
+node-nan (1.8.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.8.4
+
+ -- Andrew Kelley <superjoe30@gmail.com>  Mon, 18 May 2015 19:47:10 +0000
+
+node-nan (1.3.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.3.0
+  * Move to pkg-javascript
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 06 Sep 2014 22:41:22 +0200
+
+node-nan (1.2.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.2.0
+  * Standards-Version 3.9.5
+  * Build-Depends nodejs, avoids availability on platforms nodejs
+    isn't built
+  * Loosen dependency on nodejs version - only >= 0.10 is available
+  * Copyright for cpplint.py
+  * Copyright NAN Contributors - the list is given elsewhere
+  * Install package.json instead of putting it in docs
+  * Install include_dirs.js instead of index.js
+  * Some examples are installed already, no need to install tests
+    in docs as well
+  * Simplify rules, disable cpplint check on build
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 14 Jun 2014 22:21:59 +0200
+
+node-nan (0.3.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #721561).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 03 Sep 2013 01:28:36 +0200

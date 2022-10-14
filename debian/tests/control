@@ -1,0 +1,3 @@
+Test-Command: make -f debian/rules testexamples
+Depends: @, @builddeps@
+Restrictions: allow-stderr
