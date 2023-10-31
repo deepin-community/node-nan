@@ -5,7 +5,7 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with nodejs 
+	dh $@ --with nodejs
 
 debian/testdir/examples:
 	test -d debian/testdir || mkdir -p debian/testdir
